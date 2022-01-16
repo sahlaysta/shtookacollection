@@ -8,7 +8,7 @@ import com.github.sahlaysta.shtooka.ShtookaCollection;
 import com.github.sahlaysta.shtooka.ShtookaVoiceClip;
 
 ShtookaCollection sc = new ShtookaCollection("C:\\cmn-caen-tan_flac.tar");
-ShtookaVoiceClip voiceClip = sc.get("效率");
+ShtookaVoiceClip voiceClip = sc.getVoiceClip("效率");
 voiceClip.play(); //plays the voice clip audio
 sc.close();
 ```
