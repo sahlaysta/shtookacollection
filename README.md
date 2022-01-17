@@ -1,16 +1,22 @@
 # shtookacollection
-A Java class that manages and plays audio from a Shtooka .tar collection. Works entirely with random access file, so the .tar file or voice clips are not put in memory.
+A Java class that manages and plays audio from a Shtooka .tar collection. Those collections are downloadable from Shtooka's page: http://shtooka.net/download.php
+
+Works entirely with random access file, so the .tar file or voice clips are not put in memory.
 
 <h1>Usage example</h1>
 
 ```java
+import java.io.IOException;
+
 import com.github.sahlaysta.shtooka.ShtookaCollection;
 import com.github.sahlaysta.shtooka.ShtookaVoiceClip;
 
-ShtookaCollection sc = new ShtookaCollection("C:\\cmn-caen-tan_flac.tar");
-ShtookaVoiceClip voiceClip = sc.getVoiceClip("效率");
-voiceClip.play(); //plays the voice clip audio
-sc.close();
+public static void main(String[] args) throws IOException {
+    ShtookaCollection sc = new ShtookaCollection("C:\\cmn-caen-tan_flac.tar");
+    ShtookaVoiceClip voiceClip = sc.getVoiceClip("效率");
+    voiceClip.play(); //plays the voice clip audio
+    sc.close();
+}
 ```
 
 <h2>License</h2>
