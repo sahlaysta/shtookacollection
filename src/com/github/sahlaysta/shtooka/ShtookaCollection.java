@@ -341,9 +341,10 @@ public class ShtookaCollection extends RandomAccessFile {
 	 * Shtooka Collection has been closed */
 	public ShtookaVoiceClip getVoiceClip(String name) {
 		checkClosed();
+		String namelc = name.toLowerCase();
 		for (ShtookaVoiceClip svc: voiceClips)
 			for (String s: svc.names)
-				if (Util.stringsEqual(name, s))
+				if (Util.stringsEqual(namelc, s))
 					return svc;
 		return null;
 	}
