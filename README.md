@@ -11,11 +11,13 @@ import java.io.IOException;
 import com.github.sahlaysta.shtooka.ShtookaCollection;
 import com.github.sahlaysta.shtooka.ShtookaVoiceClip;
 
-public static void main(String[] args) throws IOException {
-    ShtookaCollection sc = new ShtookaCollection("C:\\cmn-caen-tan_flac.tar");
-    ShtookaVoiceClip voiceClip = sc.getVoiceClip("效率");
-    voiceClip.play(); //plays the voice clip audio
-    sc.close();
+public class Main {
+    public static void main(String[] args) throws IOException {
+        ShtookaCollection sc = new ShtookaCollection("C:\\cmn-caen-tan_flac.tar");
+        ShtookaVoiceClip voiceClip = sc.getVoiceClip("效率");
+        voiceClip.play(); //plays the voice clip audio
+        sc.close();
+    }
 }
 ```
 
