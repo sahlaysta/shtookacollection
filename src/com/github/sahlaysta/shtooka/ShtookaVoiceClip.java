@@ -36,8 +36,7 @@ public class ShtookaVoiceClip {
 	 * is empty. */
 	public final String[] names;
 	
-	/** Constructs a Shtooka Voice Clip defining
-	 * the default fields.
+	/** Constructs a Shtooka Voice Clip defining each field.
 	 * @param owner the Shtooka Collection owner of the voice clip
 	 * @param filename the .tar entry filename
 	 * @param offset the .tar entry file offset
