@@ -1,5 +1,5 @@
 # shtookacollection
-A Java class that manages and plays audio from a Shtooka .tar collection. Those collections are downloadable from Shtooka's page: http://shtooka.net/download.php
+A Java library that manages and plays audio from a Shtooka .tar collection. Those collections are downloadable from Shtooka's page: http://shtooka.net/download.php
 
 Works entirely with random access file, so the .tar file or voice clips are not put in memory.
 
