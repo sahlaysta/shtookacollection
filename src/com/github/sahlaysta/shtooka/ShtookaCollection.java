@@ -259,9 +259,8 @@ public class ShtookaCollection extends RandomAccessFile {
 					continue e;//delimiter not met
 				}
 			}
-			break;//delimiter met
+			return level;//delimiter met
 		}
-		return level;
 	}
 	private String xmlReadStr(StringBuilder sb) throws IOException {
 		//reads a string to the stringbuilder from XML
@@ -408,12 +407,13 @@ public class ShtookaCollection extends RandomAccessFile {
 		//check if audio is playing in other thread
 		boolean err;
 		synchronized (playing) {
-			err = playing.getAndSet(true);
+			err = playing.get();
 		}
 		if (err)
 			throw new UnsupportedOperationException(
 				"Audio from this Shtooka Collection is already"
 				+ " currently playing on a separate thread.");
+		playing.set(true);
 		
 		//play flac audio
 		/* Code for FLAC decoder is obtained from:
