@@ -76,7 +76,7 @@ public class ShtookaCollection extends RandomAccessFile {
 	 * @param file the file of the Shtooka Collection
 	 * @throws IOException if an I/O error occurs
 	 * @throws RuntimeException if the specified URL is not
-	 * formatted strictly according toto RFC2396 and cannot
+	 * formatted strictly according to RFC2396 and cannot
 	 * be converted to a URI
 	 * */
 	public ShtookaCollection(URL file) throws IOException {
@@ -236,7 +236,7 @@ public class ShtookaCollection extends RandomAccessFile {
 			if (level == -1) //XML end of file cond
 				break;
 			//read the swac text string
-			String swactext = xmlReadStr(new StringBuilder());
+			String swactext = xmlReadStr(new StringBuilder()).toLowerCase();
 			
 			//add tags to list
 			tags.add(new Tag(filename, swactext));
@@ -360,10 +360,11 @@ public class ShtookaCollection extends RandomAccessFile {
 	 * Shtooka Collection has been closed */
 	public ShtookaVoiceClip[] getVoiceClips(String name) {
 		checkClosed();
+		String namelc = name.toLowerCase();
 		List<ShtookaVoiceClip> result = new ArrayList<>();
 		for (ShtookaVoiceClip svc: voiceClips) {
 			for (String s: svc.names) {
-				if (Util.stringsEqual(name, s)) {
+				if (Util.stringsEqual(namelc, s)) {
 					result.add(svc);
 					continue;
 				}
