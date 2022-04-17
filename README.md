@@ -8,8 +8,8 @@ Works entirely with random access file, so the .tar file or voice clips are not 
 ```java
 import java.io.IOException;
 
-import com.github.sahlaysta.shtooka.ShtookaCollection;
-import com.github.sahlaysta.shtooka.ShtookaVoiceClip;
+import sahlaysta.shtooka.ShtookaCollection;
+import sahlaysta.shtooka.ShtookaVoiceClip;
 
 public class Main {
     public static void main(String[] args) throws IOException {
