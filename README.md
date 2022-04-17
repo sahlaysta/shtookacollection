@@ -24,7 +24,7 @@ public class Main {
 <h2>License</h2>
 This library is distributed under the GNU General Public License v3.0.
 
-    Copyright (C) 2022 Shtooka Collection Contributors
+    Copyright (C) 2022 sahlaysta
     
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
