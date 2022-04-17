@@ -39,5 +39,5 @@ This library is distributed under the GNU General Public License v3.0.
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <https://www.gnu.org/licenses/>.
 
-The code for FLAC audio file decoding used by this library is obtained from Project Nayuki.<br>
+The code for FLAC audio file decoding used by this library is obtained from Project Nayuki, distributed under the GNU General Public License v3.0<br>
 Copyright (c) Project Nayuki https://www.nayuki.io/page/flac-library-java
