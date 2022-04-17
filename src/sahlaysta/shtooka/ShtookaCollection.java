@@ -37,7 +37,7 @@ import io.nayuki.flac.decode.FlacDecoder;
  * {@link UnsupportedOperationException}
  * after it is closed.
  * 
- * @author porog
+ * @author sahlaysta
  * @see ShtookaVoiceClip
  * */
 public class ShtookaCollection extends RandomAccessFile {

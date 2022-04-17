@@ -11,7 +11,7 @@ import java.io.IOException;
  * voice clip is closed, this voice clip will
  * fail to play.
  * 
- * @author porog
+ * @author sahlaysta
  * @see ShtookaCollection
  * */
 public class ShtookaVoiceClip {
