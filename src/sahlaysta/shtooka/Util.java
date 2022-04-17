@@ -1,4 +1,4 @@
-package com.github.sahlaysta.shtooka;
+package sahlaysta.shtooka;
 
 //lazy private util class
 final class Util {

@@ -1,4 +1,4 @@
-package com.github.sahlaysta.shtooka;
+package sahlaysta.shtooka;
 
 import java.io.IOException;
 
